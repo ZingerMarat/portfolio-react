@@ -1,34 +1,44 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './styles/main.css'
+import Navbar from './components/navbar/Navbar'
+import Header from './components/header/Header'
+import Footer from './components/footer/Footer'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div className="App">
+
+      <Navbar />
+      <Header />
+
+      <main className="section">
+        <div className="container">
+          <h1 className="title-1">Skills</h1>
+
+          <ul className="content-list">
+            <li className="content-list__item">
+              <h2 className="title-2">Frontend</h2>
+              <p>
+                JavaScript, React, HTML, CSS, Bootstrap, Git, GitHub, REST API, AJAX, JSON, WebSockets
+              </p>
+
+            </li>
+
+            <li className="content-list__item">
+              <h2 className="title-2">Backend</h2>
+              <p>
+                Node.js, Express, MongoDB, Mongoose, SQL, PostgreSQL, REST API, WebSockets
+              </p>
+
+            </li>
+
+          </ul>
+        </div>
+
+      </main>
+
+      <Footer />
+
+    </div>
   )
 }
 
