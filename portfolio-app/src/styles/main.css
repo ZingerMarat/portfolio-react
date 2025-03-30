@@ -40,8 +40,6 @@
 }
 
 html, body {
-    display: flex;
-    flex-direction: column;
     min-height: 100vh;
 
     font-family: 'DM Sans', sans-serif;
@@ -50,6 +48,16 @@ html, body {
     /* light mode */
     background-color: var(--page-bg);
     color: var(--text-color)
+}
+
+#root{
+    min-height: 100vh;
+}
+
+.App{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 
