@@ -5,6 +5,7 @@ import Footer from './components/footer/Footer'
 import Home from './pages/home'
 import Projects from './pages/Projects'
 import Contacts from './pages/Contacts'
+import Project from './pages/Project'
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
 
       <Navbar />
       {/* <Home /> */}
-      <Projects />
+      {/* <Projects /> */}
+      <Project />
       {/* <Contacts /> */}
       <Footer />
 
