@@ -1,5 +1,11 @@
 /* Nav */
 .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+
     padding: 20px 0;
     border-bottom: 1px solid var(--dark-border);
     background-color: var(--dark-bg);
@@ -29,7 +35,7 @@
     font-weight: 700;
 }
 
-.nav-list{
+.nav-list {
     display: flex;
     flex-wrap: wrap;
     row-gap: 10px;
@@ -54,7 +60,7 @@
     background-color: var(--dark-border);
 }
 
-.nav-list__link--active{
+.nav-list__link--active {
     position: relative;
 }
 
