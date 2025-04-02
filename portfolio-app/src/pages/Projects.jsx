@@ -13,12 +13,18 @@ const Projects = () => {
             <div className="container">
                 <h2 className="title-1">Projects</h2>
 
+
                 <ul className="projects">
-                    <Project img_src={project01} project_title="Project 1" />
-                    <Project img_src={project02} project_title="Project 2" />
-                    <Project img_src={project03} project_title="Project 3" />
-                    <Project img_src={project04} project_title="Project 4" />
-                    <Project img_src={project05} project_title="Project 5" />
+                    {/* 
+                    projects.map((project, index) => (
+                        <Project key={index} img_src={project.img_src} project_title={project.project_title} id={project.id}/>
+                    ))
+                    */}
+                    <Project img_src={project01} project_title="Project 1" id="1"/>
+                    <Project img_src={project02} project_title="Project 2" id="2"/>
+                    <Project img_src={project03} project_title="Project 3" id="3"/>
+                    <Project img_src={project04} project_title="Project 4" id="4"/>
+                    <Project img_src={project05} project_title="Project 5" id="5"/>
                 </ul>
 
                 
