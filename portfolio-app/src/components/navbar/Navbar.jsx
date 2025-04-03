@@ -1,8 +1,7 @@
-import moon from '../../img/icons/moon.svg'
-import sun from '../../img/icons/sun.svg'
+import { NavLink } from 'react-router-dom'
+import DarkModeButton from '../buttons/DarkModeButton'
 import './style.css'
 
-import { NavLink } from 'react-router-dom'
 
 const Navbar = () => {
 
@@ -18,10 +17,7 @@ const Navbar = () => {
                         portfolio
                     </NavLink>
                     
-                    <button className="dark-mode-btn">
-                        <img src={sun} alt="light mode" className="dark-mode-btn__icon" />
-                        <img src={moon} alt="dark mode" className="dark-mode-btn__icon" />
-                    </button>
+                    <DarkModeButton/>
 
                     <ul className="nav-list">
                         <li className="nav-list__item">

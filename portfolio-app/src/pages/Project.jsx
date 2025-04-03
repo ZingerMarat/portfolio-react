@@ -1,7 +1,5 @@
 import { useParams } from 'react-router-dom';
 import img from '../img/projects/01-big.jpg';
-import githubIcon from '../img/icons/github.svg';
-import websiteIcon from '../img/icons/website.svg';
 import GitHubButton from '../components/buttons/GitHubButton';
 import WebSiteButton from '../components/buttons/WebSiteButton';
 
