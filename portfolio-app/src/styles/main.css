@@ -293,5 +293,8 @@ html, body {
     .nav-row{
         justify-content: space-between;
     }
+    .nav-list{
+        margin: auto;
+    }
 
 }
